@@ -1,0 +1,68 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Fonte moderna e agradável */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #1C261A; /* Fundo principal em tom claro */
+  color: #333333; /* Texto principal em cinza escuro */
+}
+
+header {
+  background: #2D402A; /* Azul suave para o cabeçalho */
+  color: #ffffff; /* Texto branco para contraste */
+  padding: 20px 0;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #F2F2F2; /*para títulos */
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  background: #888C87; /* Fundo branco para seções */
+  border-radius: 8px;
+  border: 1px solid #2D402A; /* Borda azul pastel */
+}
+
+.foto-centralizada {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.foto-centralizada img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  object-position: center top; 
+}
+
+.foto-centralizada img:hover {
+  transform: scale(1.05);
+}
+
+.projeto {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #00b4d8; /* Azul claro para links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0077b6; /* Azul mais escuro ao passar o mouse */
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #2D402A; /* Azul pastel para o rodapé */
+  color: #F2F2F2; /* Texto em cinza escuro */
+}
