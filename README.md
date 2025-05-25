@@ -6,4 +6,4 @@
  
 ### Portfólio Online  
 🔗 [Acesse o Portfólio](LINK_PARA_PORTFOLIO)
-🎤 [Pitch de Apresentação (vídeo)](LINK_PARA_VIDEO_NO_TEAMS)
+🎤 [Pitch de Apresentação (vídeo)]((https://youtu.be/DYtjYSLK3Sk?si=_3ZGfuri4I1ldTQc))
