@@ -2,71 +2,364 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Stefan Souza Cruz</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stefan — Product Owner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Stefan Souza Cruz</h1>
-        <p>Desenvolvedor em busca de aprimoramento | FATEC Jacareí</p>
-    </header>
 
-    <section id="apresentacao">
-        <h2>Apresentação Pessoal</h2>
-        <div class="foto-centralizada">
-            <img src="img/foto.jpeg" alt="Foto de Stefan" />
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Stefan<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#cases">Cases</a></li>
+      <li><a href="#experiencia">Experiência</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#certificados">Certificados</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-shape"></div>
+    <div class="hero-left">
+      <div class="hero-tag">Disponível para oportunidades</div>
+      <h1>Product<br /><em>Owner</em> com<br />DNA técnico</h1>
+      <p class="hero-sub">Conecto negócio, usuário e tecnologia para construir produtos que fazem sentido — e entrego
+        com um time de dev que me entende.</p>
+      <div class="hero-ctas">
+        <a href="#cases" class="btn-primary">Ver Cases →</a>
+        <a href="#contato" class="btn-secondary">Entrar em contato</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-photo-wrap">
+        <img src="foto.jpeg" alt="Stefan Souza Cruz" class="hero-photo" />
+        <div class="hero-photo-label"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <p class="section-label reveal">Quem sou eu</p>
+    <h2 class="reveal">Além do currículo</h2>
+    <div class="sobre-grid">
+      <div class="sobre-text reveal">
+        <p>Estudo Desenvolvimento de Software Multiplataforma na <strong>Fatec</strong> e ao longo do curso percebi que
+          o que mais me motivava não era só construir — <strong>era maximizar o valor do produto.</strong></p>
+        <p>Essa curiosidade me levou para produto. Hoje combino minha visão técnica com pensamento estratégico para
+          tomar decisões mais embasadas, escrever histórias que o time de dev realmente entende e aproximar negócio de
+          usuário.</p>
+        <p>Atualmente estagio na <strong>Safran Cabin</strong>, empresa aeroespacial de renome mundial, onde desenvolvo
+          competências em gestão de processos, relacionamento com stakeholders internacionais e melhoria contínua — tudo
+          isso aplicado diretamente à forma como penso produto.</p>
+      </div>
+      <div class="sobre-stats reveal">
+        <div class="stat-box">
+          <div class="stat-number">4<span>+</span></div>
+          <div class="stat-label">Semestres na Fatec DSM</div>
         </div>
-        <p>
-            Olá! Sou estudante da FATEC Jacareí e desenvolvedor em constante evolução. Tenho grande interesse por
-            tecnologia e busco continuamente aprimorar minhas habilidades técnicas e ampliar meus conhecimentos.
-            Valorizo a área de gestão de projetos, com foco na organização de processos e na adequada documentação de
-            software.
-        </p>
-    </section>
-
-
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Scrum Academy</h3>
-            <p><strong>Descrição:</strong> Aplicacao web que ensina os usurarios sobre a metodologia agil Scrum.</p>
-            <p><strong>Link GitHub:</strong> <a
-                    href="https://github.com/Stefan0212/DSM---DevsAcademy/tree/main/ABP_1%C2%B0Semestre"
-                    target="_blank">Scrum Academy</a></p>
-            <p><strong>Participação:</strong> Contribuí no desenvolvimento do banco de dados e na parte visual do
-                projeto. Atuei como Scrum Master, garantindo o andamento do processo de desenvolvimento e a documentação
-                adequada do software.</p>
+        <div class="stat-box">
+          <div class="stat-number">2<span><i data-lucide="trophy"></i></span></div>
+          <div class="stat-label">Prêmios de melhor projeto da turma</div>
         </div>
-
-        <div class="projeto">
-            <h3>Wild Fire Explorer</h3>
-            <p><strong>Descrição:</strong> Visualizador geográfico de focos de calor com filtros interativos e mapas via
-                Leaflet.</p>
-            <p><strong>Link GitHub:</strong> <a href="https://github.com/CodeGators/CodeGators---Documentacao"
-                    target="_blank">Wild Fire Explorer</a></p>
-            <p><strong>Participação:</strong> Atuei no desenvolvimento do frontend, assegurando a estilização da página
-                e a integração dos dados com o backend. Também contribuí na modelagem do banco de dados e na manipulação
-                dos dados fornecidos. Nesse projeto, exerci o papel de Scrum Master, sendo responsável pela organização
-                do GitHub e pela documentação correta do software.</p>
+        <div class="stat-box">
+          <div class="stat-number">3<span>×</span></div>
+          <div class="stat-label">Projetos acadêmicos entregues</div>
         </div>
-    </section>
+        <div class="stat-box">
+          <div class="stat-number">Dev<span>+</span></div>
+          <div class="stat-label">Background técnico aplicado a produto</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="outras-info">
-        <h2>Outras Informações</h2>
-        <ul>
-            <li>Email: stefancruz08@gmail.com</li>
-            <li>GitHub: <a href="https://github.com/Stefan0212" target="_blank">Stefan0212</a></li>
-            <li>Interesses: Analise de dados, Analise de sistema e Gestao de Projetos.</li>
-        </ul>
-    </section>
+  <!-- CASES -->
+  <section id="cases">
+    <p class="section-label reveal">O que eu construí</p>
+    <h2 class="reveal">Cases de Produto</h2>
+    <p class="section-intro reveal">Uma seleção dos projetos onde atuei com foco em descoberta, priorização e entrega de
+      valor — dois deles premiados como melhor da turma.</p>
+    <div class="cases-grid">
 
-    <footer>
-        <p>&copy; 2025 Stefan Souza Cruz</p>
-    </footer>
+      <!-- Case Destaque — Projeto Odin -->
+      <div class="case-card featured reveal">
+        <div class="case-thumb">
+          <i data-lucide="globe"></i>
+        </div>
+        <div class="award-badge">
+          <i data-lucide="trophy"></i> Melhor Projeto
+        </div>
+        <div class="case-body">
+          <div class="case-tags">
+            <span class="tag">3º Semestre</span>
+            <span class="tag neutral">Backend</span>
+            <span class="tag neutral">Dados Geoespaciais</span>
+          </div>
+          <div class="case-title">Projeto Odin — Plataforma de Dados Geoespaciais</div>
+          <p class="case-desc">Atuei como desenvolvedor Backend na construção de uma plataforma para análise e
+            comparação de dados de satélites, incluindo variáveis como NDVI. O projeto exigiu entendimento profundo de
+            arquitetura de dados e tomada de decisões técnicas que impactaram diretamente a experiência do usuário
+            final.</p>
+          <div class="case-meta">
+            <div class="case-metric"><strong>INPE</strong><span>Dados integrados</span></div>
+            <div class="case-metric"><strong>Multi</strong><span>Satélites comparados</span></div>
+            <div class="case-metric"><strong>Back</strong><span>Stack desenvolvido</span></div>
+            <a href="https://github.com/CodeGators/ODIN-Documenta-o" target="_blank" class="case-repo-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              Ver repositório
+            </a>
+          </div>
+        </div>
+      </div>
 
+      <!-- Case 2 — WildFireExplore -->
+      <div class="case-card reveal">
+        <div class="award-badge">
+          <i data-lucide="trophy"></i> Melhor Projeto
+        </div>
+        <div class="case-tags">
+          <span class="tag neutral">2º Semestre</span>
+          <span class="tag neutral">Scrum Master</span>
+          <span class="tag neutral">Dados INPE</span>
+        </div>
+        <div class="case-title">WildFireExplore — Visualização de Queimadas</div>
+        <p class="case-desc">Liderei o time como Scrum Master no desenvolvimento de uma aplicação de visualização de
+          focos de queimadas com dados do INPE. Fui responsável pela facilitação de cerimônias, gestão do Trello e por
+          garantir alinhamento técnico para que os prazos fossem cumpridos com qualidade.</p>
+        <div class="case-meta">
+          <div class="case-metric"><strong>INPE</strong><span>Dados integrados</span></div>
+          <div class="case-metric">
+            <strong><i data-lucide="trophy"></i></strong>
+            <span>Melhor da turma</span>
+          </div>
+          <a href="https://github.com/CodeGators/WildFireExplorer---Documentacao" target="_blank"
+            class="case-repo-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            Ver repositório
+          </a>
+        </div>
+      </div>
+      <!-- Case 3 — Plataforma SCRUM -->
+      <div class="case-card reveal">
+        <div class="case-tags">
+          <span class="tag neutral">1º Semestre</span>
+          <span class="tag neutral">Scrum Master</span>
+          <span class="tag neutral">EdTech</span>
+        </div>
+        <div class="case-title">Plataforma SCRUM — Ferramenta Educacional sobre Metodologia ágil</div>
+        <p class="case-desc">Conduzi o time na construção de uma ferramenta educacional sobre metodologias ágeis. Além
+          de exercer o papel de Scrum Master, introduzi a cultura ágil ao grupo do zero — definindo rituais, criando o
+          backlog inicial e garantindo que o produto entregasse valor real ao usuário.</p>
+        <div class="case-meta">
+          <div class="case-metric"><strong>Ágil</strong><span>Cultura implantada</span></div>
+          <a href="https://github.com/Stefan0212/DSM---DevsAcademy/tree/main/ABP_1%C2%B0Semestre" target="_blank"
+            class="case-repo-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.929.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            Ver repositório
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section id="experiencia">
+    <p class="section-label reveal">Onde já estive</p>
+    <h2 class="reveal">Experiência Profissional</h2>
+    <p class="section-intro reveal">Minha trajetória profissional, onde desenvolvi habilidades que complementam
+      diretamente minha visão de produto.</p>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">
+          <div class="period">Fev 2025 — Presente</div>
+          <div class="company">Safran Cabin</div>
+        </div>
+        <div class="timeline-line">
+          <div class="timeline-dot"></div>
+          <div class="timeline-connector"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-role">Document Control <span class="timeline-type">Estágio</span></div>
+          <p class="timeline-desc">Atuo no controle de documentação de engenharia para programas aeronáuticos de renome
+            internacional, garantindo conformidade técnica e qualidade de entrega para clientes como Airbus, Boeing e
+            Embraer.</p>
+          <div class="timeline-highlights">
+            <div class="highlight-item">Gestão e liberação de documentos técnicos para programas aeronáuticos
+              internacionais (Airbus, Boeing, Embraer), assegurando conformidade e prazos rigorosos.</div>
+            <div class="highlight-item">Administração de pedidos de clientes de grande porte, com foco em atendimento
+              eficiente dentro dos padrões de qualidade aeronáutica.</div>
+            <div class="highlight-item">Desenvolvimento e implementação de melhorias de processos operacionais,
+              reduzindo retrabalho e aumentando eficiência da equipe.</div>
+            <div class="highlight-item">Condução de treinamentos e onboarding de novos jovens aprendizes, transferindo
+              conhecimentos técnicos e práticas organizacionais.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades">
+    <p class="section-label reveal">O que eu sei fazer</p>
+    <h2 class="reveal">Habilidades</h2>
+    <p class="section-intro reveal">Uma combinação pouco comum: visão de produto com capacidade técnica para ir fundo
+      quando necessário.</p>
+    <div class="skills-grid">
+
+      <div class="skills-group reveal">
+        <div class="skills-group-title"><span class="dot"></span> Produto & Gestão</div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Discovery & Research</span><span
+                class="skill-level">Avançado</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:85%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Escrita de User Stories</span><span
+                class="skill-level">Intermediário</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:70%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Priorização & Analise</span><span
+                class="skill-level">Intermediário</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Scrum / Kanban</span><span
+                class="skill-level">Avançado</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:88%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-group reveal">
+        <div class="skills-group-title"><span class="dot"></span> Técnico</div>
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">JavaScript / TypeScript</span><span
+                class="skill-level">Intermediário</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:70%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">React</span><span class="skill-level">Intermediário</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:65%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">SQL & Banco de Dados</span><span
+                class="skill-level">Intermediário</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:75%"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row"><span class="skill-name">Git & Versionamento</span><span
+                class="skill-level">Intermediário</span></div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" style="width:68%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-group full-width reveal">
+        <div class="skills-group-title"><span class="dot"></span> Ferramentas</div>
+        <div class="tools-list">
+          <span class="tool-tag">Notion</span>
+          <span class="tool-tag">Figma</span>
+          <span class="tool-tag">Trello</span>
+          <span class="tool-tag">VS Code</span>
+          <span class="tool-tag">GitHub</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- CERTIFICADOS -->
+<section id="certificados">
+  <p class="section-label reveal">Aprendizado contínuo</p>
+  <h2 class="reveal">Certificados</h2>
+  <p class="section-intro reveal">Formações complementares que reforçam minha base técnica e minha transição para produto.</p>
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-icon">
+        <i data-lucide="badge-check"></i>
+      </div>
+      <div class="cert-name">Desenvolvedor Front-End</div>
+      <div class="cert-issuer">Centro Paula Souza</div>
+      <div class="cert-footer">
+        <span class="cert-year">Set 2025</span>
+        <span class="cert-badge">Concluído</span>
+      </div>
+      <a href="https://siga.cps.sp.gov.br/cartorio/autenticador.aspx?28220403-9545-428b-9f81-2658706259cb" 
+         target="_blank" 
+         class="cert-link">
+        <i data-lucide="external-link"></i>
+        Verificar certificado
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <p class="section-label reveal">Vamos conversar</p>
+    <h2 class="reveal">Aberto a novas oportunidades</h2>
+    <p class="section-intro reveal">Se você procura um PO que fala a língua do time de dev, me manda uma mensagem. Gosto
+      de uma boa conversa sobre produto.</p>
+    <a href="stefancruz08@gmail.com" class="contact-cta reveal">✉ stefancruz08@gmail.com</a>
+    <div class="social-links reveal">
+      <a href="https://www.linkedin.com/in/stefan-souza/" class="social-link" title="LinkedIn" target="_blank">in</a>
+      <a href="https://github.com/Stefan0212" class="social-link" title="GitHub" target="_blank">gh</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Stefan Souza Cruz — Portfólio</span>
+    <span>Feito com ❤</span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 
 </html>
