@@ -1,5 +1,5 @@
 # Portfólio de Projetos - Fatec Jacareí
-### Aluno: Stefan Souza Cruz
+### Aluno: Stefan Souza Cru
 ### Curso: Desenvolvimento de Software Multiplataforma
 ### Turma: 2o. Semestre de 2024
 ---
